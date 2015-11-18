@@ -1,6 +1,18 @@
+/* General */
 section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;   
 }
+
+/* Bootstrap Overwrite */
+.navbar .dropdown-menu {
+    padding: 0;   
+}
+
+.dropdown-menu a {
+    padding: 5px;   
+}
+
+/* Custom */
