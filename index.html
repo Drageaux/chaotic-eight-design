@@ -17,11 +17,11 @@
     <!-- Others -->
 	<link href='https://fonts.googleapis.com/css?family=Noticia+Text|Crete+Round|Alegreya+Sans:400,500|Roboto+Condensed|Source+Sans+Pro|Montserrat|PT+Sans|Raleway' rel='stylesheet' type='text/css'>
     
-    <!-- Custom -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/custom/css/main.css">
 </head>
 
-<body>
+<body onload="init_characters();">
     <!-- Top Nav Bar -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="collapse navbar-collapse">
@@ -35,6 +35,9 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="btn btn-default page-scroll" href="#drageaux">Drageaux</a></li>
+                        <li><a class="btn btn-default page-scroll" href="#fearnix">Fearnix</a></li>
+                        <li><a class="btn btn-default page-scroll" href="#raiger">Raiger</a></li>
+                        <li><a class="btn btn-default page-scroll" href="#edgard">Edgard</a></li>
                     </ul>
                 </li>
             </ul>
@@ -44,19 +47,19 @@
     
     <section id="intro">
         <div class="container">
-            <h1>Main</h1>
-            <a class="btn btn-default page-scroll" href="#drageaux">Click Me!</a>
+            <h1>Check out the characters!</h1>
+            <a class="btn btn-default page-scroll" href="#drageaux">Click</a>
         </div>
     </section>
     
     
     <section id="drageaux"></section>
-<!--
     <section id="fearnix"></section>
     <section id="raiger"></section>
-    <section id="raiger"></section>
--->
+    <section id="edgard"></section>
 </body>
-<script src="assets/custom/js/character_objects.js"></script>
+    
+<!-- Custom JS -->
+<script src="assets/custom/js/characters.js"></script>
 
 </html>

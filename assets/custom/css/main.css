@@ -73,30 +73,30 @@ section {
     border-radius: 0 5px 5px 0;
 }
 
-#drageauxHealth {
+.health-fill {
     background-color: #f20d0d;
 }
 
-#drageauxStamina {
+.stamina-fill {
     background-color: #3333ff;
 }
 
-#drageauxPAttack {
+.pattack-fill {
     background-color: #ff6700;
 }
 
-#drageauxPDefense {
+.pdefense-fill {
     background-color: #ffbf00;
 }
 
-#drageauxMAttack {
+.mattack-fill {
     background-color: #3399ff;
 }
 
-#drageauxMDefense {
+.mdefense-fill {
     background-color: #22dd22;
 }
 
-#drageauxSpeed {
+.speed-fill {
     background-color: #ff00ff;
 }
