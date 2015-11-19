@@ -107,13 +107,13 @@ function displayStats(char) {
             </table>\
         </div>';
     
-    document.getElementById(charNameLowercase+"Health").style.width = char.health+"%";
-    document.getElementById(charNameLowercase+"Stamina").style.width = char.stamina+"%";
-    document.getElementById(charNameLowercase+"PAttack").style.width = char.pAttack+"%";
-    document.getElementById(charNameLowercase+"PDefense").style.width = char.pDefense+"%";
-    document.getElementById(charNameLowercase+"MAttack").style.width = char.mAttack+"%";
-    document.getElementById(charNameLowercase+"MDefense").style.width = char.mDefense+"%";
-    document.getElementById(charNameLowercase+"Speed").style.width = char.speed+"%";
+    document.getElementById(charNameLowercase+"Health").style.width = (char.health-2) + "%";
+    document.getElementById(charNameLowercase+"Stamina").style.width = (char.stamina-2) + "%";
+    document.getElementById(charNameLowercase+"PAttack").style.width = (char.pAttack-2) + "%";
+    document.getElementById(charNameLowercase+"PDefense").style.width = (char.pDefense-2) + "%";
+    document.getElementById(charNameLowercase+"MAttack").style.width = (char.mAttack-2) + "%";
+    document.getElementById(charNameLowercase+"MDefense").style.width = (char.mDefense-2) + "%";
+    document.getElementById(charNameLowercase+"Speed").style.width = (char.speed-2) + "%";
 }
 
 
