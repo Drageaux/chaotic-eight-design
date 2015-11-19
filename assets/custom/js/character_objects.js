@@ -1,6 +1,6 @@
-function createCharacter(name) {
+var Character = function(name) {
     this.name = name;
-    console.log("lol");
+    
     // Stats - Max of 525 
     switch(name) {
         case "Drageaux":
@@ -11,8 +11,7 @@ function createCharacter(name) {
             this.mAttack = 80;
             this.mDefense = 65;
             this.speed = 70;
-            document.getElementById("drageaux").innerHTML = "<div>hello</div>";
-            
+            displayStats(this);
             break;
         case "Fearnix":
             this.health = 60;
@@ -42,14 +41,78 @@ function createCharacter(name) {
             this.speed = 60;
             break;
     }
-        
-    
+            
     console.log(this.name + " instantiated with " + this.health + "HP.");
 }
 
 
-//
-//var drageaux = new Character("Drageaux");
+
+var drageaux = new Character("Drageaux");
 //var fearnix = new Character("Fearnix");
 //var raiger = new Character("Raiger");
 //var edgard = new Character("Edgard");
+
+
+function displayStats(char) {
+    var nameStrLower = char.name.toLowerCase();
+    var content = document.getElementById(nameStrLower);    
+    
+    content.innerHTML = ' \
+        <div class="container">\
+            <h1>' + char.name + '</h1>\
+            <table>\
+                <tbody>\
+                    <tr>\
+                        <td><b>Health</b></td>\
+                        <td class="gauge-background health-background">\
+                            <div class="gauge-fill" id="drageauxHealth"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Stamina</b></td>\
+                        <td class="gauge-background stamina-background">\
+                            <div class="gauge-fill" id="drageauxStamina"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Physical Attack</b></td>\
+                        <td class="gauge-background pattack-background">\
+                            <div class="gauge-fill" id="drageauxPAttack"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Physical Defense</b></td>\
+                        <td class="gauge-background pdefense-background">\
+                            <div class="gauge-fill" id="drageauxPDefense"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Mystical Attack</b></td>\
+                        <td class="gauge-background mattack-background">\
+                            <div class="gauge-fill" id="drageauxMAttack"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Mystical Defense</b></td>\
+                        <td class="gauge-background mdefense-background">\
+                            <div class="gauge-fill" id="drageauxMDefense"></div>\
+                        </td>\
+                    </tr>\
+                    <tr>\
+                        <td><b>Speed</b></td>\
+                        <td class="gauge-background speed-background">\
+                            <div class="gauge-fill" id="drageauxSpeed"></div>\
+                        </td>\
+                    </tr>\
+                </tbody>\
+            </table>\
+        </div>';
+    
+    document.getElementById(nameStrLower+"Health").style.width = char.health+"%";
+    document.getElementById(nameStrLower+"Stamina").style.width = char.stamina+"%";
+    document.getElementById(nameStrLower+"PAttack").style.width = char.pAttack+"%";
+    document.getElementById(nameStrLower+"PDefense").style.width = char.pDefense+"%";
+    document.getElementById(nameStrLower+"MAttack").style.width = char.mAttack+"%";
+    document.getElementById(nameStrLower+"MDefense").style.width = char.mDefense+"%";
+    document.getElementById(nameStrLower+"Speed").style.width = char.speed+"%";
+}

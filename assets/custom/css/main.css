@@ -17,6 +17,10 @@
  *========*/
 
 /* General */
+body {
+    font-family: "Crete Round", serif;
+}
+
 section {
     height: 100%;
     padding-top: 150px;
@@ -24,8 +28,75 @@ section {
     background: #fff;   
 }
 
-/* Stat Gauge */
-section td {
-    padding: 0;
+/* Stat Gauges */
+.gauge-background {
+    position: relative;
+    width: 85%;
+    height: 25px;
 }
 
+.health-background {
+    background-color: #f53d3d;
+}
+
+.stamina-background {
+    background-color: #6666ff;   
+}
+
+.pattack-background {
+    background-color: #ff8533;   
+}
+
+.pdefense-background {
+    background-color: #ffcc33;   
+}
+
+.mattack-background {
+    background-color: #99ccff;   
+}
+
+.mdefense-background {
+    background-color: #90EE90;   
+}
+
+.speed-background {
+    background-color: #ff4dff;   
+}
+
+.gauge-fill {
+    z-index: 1;
+    position: relative;
+    height: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+#drageauxHealth {
+    background-color: #f20d0d;
+}
+
+#drageauxStamina {
+    background-color: #3333ff;
+}
+
+#drageauxPAttack {
+    background-color: #ff6700;
+}
+
+#drageauxPDefense {
+    background-color: #ffbf00;
+}
+
+#drageauxMAttack {
+    background-color: #3399ff;
+}
+
+#drageauxMDefense {
+    background-color: #22dd22;
+}
+
+#drageauxSpeed {
+    background-color: #ff00ff;
+}
