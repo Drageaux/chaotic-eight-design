@@ -63,42 +63,42 @@ function displayStats(char) {
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Stamina:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.pAttack + '</b></td>\
+                        <td class="col-md-1"><b>' + char.stamina + '</b></td>\
                         <td class="gauge-background stamina-background">\
                             <div class="gauge-fill stamina-fill" id="' + charNameLowercase + 'Stamina"></div>\
                         </td>\
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Physical Attack:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.pDefense + '</b></td>\
+                        <td class="col-md-1"><b>' + char.pAttack + '</b></td>\
                         <td class="gauge-background pattack-background">\
                             <div class="gauge-fill pattack-fill" id="' + charNameLowercase + 'PAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Physical Defense:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.mAttack + '</b></td>\
+                        <td class="col-md-1"><b>' + char.pDefense + '</b></td>\
                         <td class="gauge-background pdefense-background">\
                             <div class="gauge-fill pdefense-fill" id="' + charNameLowercase + 'PDefense"></div>\
                         </td>\
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Mystical Attack:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.mDefense + '</b></td>\
+                        <td class="col-md-1"><b>' + char.mAttack + '</b></td>\
                         <td class="gauge-background mattack-background">\
                             <div class="gauge-fill mattack-fill" id="' + charNameLowercase + 'MAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Mystical Defense:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.speed + '</b></td>\
+                        <td class="col-md-1"><b>' + char.mDefense + '</b></td>\
                         <td class="gauge-background mdefense-background">\
                             <div class="gauge-fill mdefense-fill" id="' + charNameLowercase + 'MDefense"></div>\
                         </td>\
                     </tr>\
                     <tr>\
                         <td class="col-md-2"><b>Speed:&nbsp</b></td>\
-                        <td class="col-md-1"><b>' + char.health + '</b></td>\
+                        <td class="col-md-1"><b>' + char.speed + '</b></td>\
                         <td class="gauge-background speed-background">\
                             <div class="gauge-fill speed-fill" id="' + charNameLowercase + 'Speed"></div>\
                         </td>\
