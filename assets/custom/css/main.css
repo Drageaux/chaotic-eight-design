@@ -7,6 +7,14 @@
     padding: 0;   
 }
 
+.navbar-brand {
+    padding: 0 10px 0 10px;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
 .dropdown-menu a {
     padding: 5px;   
 }
@@ -28,7 +36,7 @@ section {
     text-align: center;
 }
 
-section:nth-child(2n+1) {
+section:nth-child(odd) {
     background: #eee;
 }
 

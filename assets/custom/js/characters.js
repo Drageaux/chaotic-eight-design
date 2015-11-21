@@ -69,28 +69,28 @@ function displayStats(char) {
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Physical Attack:&nbsp</b></td>\
+                        <td class="col-md-2"><b>P.Attack:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.pAttack + '</b></td>\
                         <td class="gauge-background pattack-background">\
                             <div class="gauge-fill pattack-fill" id="' + charNameLowercase + 'PAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Physical Defense:&nbsp</b></td>\
+                        <td class="col-md-2"><b>P.Defense:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.pDefense + '</b></td>\
                         <td class="gauge-background pdefense-background">\
                             <div class="gauge-fill pdefense-fill" id="' + charNameLowercase + 'PDefense"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Mystical Attack:&nbsp</b></td>\
+                        <td class="col-md-2"><b>M.Attack:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.mAttack + '</b></td>\
                         <td class="gauge-background mattack-background">\
                             <div class="gauge-fill mattack-fill" id="' + charNameLowercase + 'MAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Mystical Defense:&nbsp</b></td>\
+                        <td class="col-md-2"><b>M.Defense:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.mDefense + '</b></td>\
                         <td class="gauge-background mdefense-background">\
                             <div class="gauge-fill mdefense-fill" id="' + charNameLowercase + 'MDefense"></div>\
