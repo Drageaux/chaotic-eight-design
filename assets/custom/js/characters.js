@@ -52,52 +52,52 @@ function displayStats(char) {
     content.innerHTML = ' \
         <div class="container">\
             <h1>' + char.name + '</h1>\
-            <table>\
+            <table class="col-md-11">\
                 <tbody>\
                     <tr>\
-                        <td class="col-md-2"><b>Health:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>Health:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.health + '</b></td>\
                         <td class="gauge-background health-background">\
                             <div class="gauge-fill health-fill" id="' + charNameLowercase + 'Health"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Stamina:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>Stamina:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.stamina + '</b></td>\
                         <td class="gauge-background stamina-background">\
                             <div class="gauge-fill stamina-fill" id="' + charNameLowercase + 'Stamina"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>P.Attack:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>P.Attack:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.pAttack + '</b></td>\
                         <td class="gauge-background pattack-background">\
                             <div class="gauge-fill pattack-fill" id="' + charNameLowercase + 'PAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>P.Defense:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>P.Defense:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.pDefense + '</b></td>\
                         <td class="gauge-background pdefense-background">\
                             <div class="gauge-fill pdefense-fill" id="' + charNameLowercase + 'PDefense"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>M.Attack:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>M.Attack:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.mAttack + '</b></td>\
                         <td class="gauge-background mattack-background">\
                             <div class="gauge-fill mattack-fill" id="' + charNameLowercase + 'MAttack"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>M.Defense:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>M.Defense:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.mDefense + '</b></td>\
                         <td class="gauge-background mdefense-background">\
                             <div class="gauge-fill mdefense-fill" id="' + charNameLowercase + 'MDefense"></div>\
                         </td>\
                     </tr>\
                     <tr>\
-                        <td class="col-md-2"><b>Speed:&nbsp</b></td>\
+                        <td class="stat-label col-md-2"><b>Speed:&nbsp</b></td>\
                         <td class="col-md-1"><b>' + char.speed + '</b></td>\
                         <td class="gauge-background speed-background">\
                             <div class="gauge-fill speed-fill" id="' + charNameLowercase + 'Speed"></div>\

@@ -60,6 +60,10 @@ section:nth-child(odd) {
 }
 
 /* Stat Gauges */
+.stat-label {
+    text-align: right;
+}
+
 .gauge-background {
     position: relative;
     width: 85%;
