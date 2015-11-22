@@ -21,21 +21,24 @@
     <link rel="stylesheet" href="assets/custom/css/main.css">
 </head>
 
-<body onload="init_characters();">
+<body data-spy="scroll" onload="init_characters();">
     <!-- Top Nav Bar -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="collapse navbar-collapse">
+            <!-- Nav Logo -->
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
-                    <img alt="Brand" src="assets/custom/images/chaoZ_logo_sketch.png">
+                    <img alt="Brand" src="assets/custom/images/chaoZ_logo_sketch_inverted.png">
                 </a>
             </div>
-            <!-- Nav items -->
+            
+            <!-- Nav Items -->
             <ul class="nav navbar-nav">
-                <li><a href="#">About</a></li>
+                <!-- About Button -->
+                <li><a class="navbar-item page-scroll" href="#about">About</a></li>
                 <!-- Characters Dropdown -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                    <a href="#" class="navbar-item dropdown-toggle" data-toggle="dropdown" role="button">
                         Characters <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -50,7 +53,8 @@
     </nav>
         
     
-    <section id="intro">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
             <h1>Check out the characters!</h1>
             <a class="btn btn-default page-scroll" href="#drageaux">Click</a>
@@ -58,6 +62,7 @@
     </section>
     
     
+    <!-- Characters Section -->
     <section id="drageaux"></section>
     <section id="fearnix"></section>
     <section id="raiger"></section>

@@ -8,15 +8,34 @@
 }
 
 .navbar-brand {
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
 }
 
 .navbar-brand img {
-    height: 50px;
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 8px;
 }
 
-.dropdown-menu a {
-    padding: 5px;   
+.navbar-item:hover, .navbar-item:focus, .active a{
+    transition-duration: 0.4s;
+}
+
+.dropdown-menu li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0;
+}
+
+.dropdown-menu .active>a,
+.dropdown-menu .active>a:hover,
+.dropdown-menu .active>a:focus {
+    background-color: gray;
+}
+
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: transparent;
 }
 
 
@@ -77,8 +96,8 @@ section:nth-child(odd) {
 
 .gauge-fill {
     position: relative;
-    margin: 0 1% 0 4px;
     z-index: 1;
+    margin: 0 1% 0 4px;
     height: 20px;
     border-width: thin;
     border-style: solid;
